@@ -1,0 +1,78 @@
+/*
+
+Float-Grid
+Author: Charles Ojukwu
+
+Classes stored here
+
+*/
+
+//Grid
+$columns: 12;
+$gutter: 2em;
+
+//Styling
+$primary: #28d;
+$background: #f8f8f8;
+
+@import "styles";
+@import "grid";
+
+.row {
+    @include row;
+}
+
+.g0 {
+    margin: 0;
+}
+
+.gs {
+    margin: (-$gutter/2) (-$gutter/4) 0;
+}
+
+.gl {
+    margin: (-$gutter*1.5) (-$gutter*0.75) 0;
+}
+
+.container {
+    @include row;
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        @include column($i);
+        .g0 & {
+            @include column($i, 0);
+        }
+        .gs & {
+            @include column($i, $gutter/2)
+        }
+        .gl & {
+            @include column($i, $gutter*1.5)
+        }
+    }
+}
+
+@for $i from 1 through $columns {
+    .push-#{$i} {
+        @include push($i);
+    }
+}
+
+
+
+.nested {
+    padding: 1rem;
+}
+
+.header,.footer {
+    @include column(12);
+}
+
+.sidebar {
+    @include column(3);
+}
+
+.content {
+    @include column(9);
+}

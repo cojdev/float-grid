@@ -1,0 +1,52 @@
+/*
+
+Float-Grid
+Author: Charles Ojukwu
+
+Mixins stored here
+
+*/
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+@mixin clearfix {
+	clear: both;
+    &:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Rows
+@mixin row($a:$gutter) {
+	@include clearfix;
+	margin: -$a (-$a / 2) 0;
+}
+
+@mixin column($a: 12, $b:$gutter, $min: 640px, $max: 0) {
+
+	//Coloured stripe background
+	.stripes & {
+		@include box-stripes;
+	}
+
+	margin: $b $b/2 0;
+
+	@media screen and (min-width: $min) {
+		
+		$temp: ($a / $columns) * 100 * 1%;
+		width: calc(#{$temp} - #{$b});
+		float: left;
+	}
+}
+
+@mixin push($a: 1) {
+	position: relative;
+	left: ($a / $columns) * 100%;
+}

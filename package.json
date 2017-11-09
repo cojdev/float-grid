@@ -1,0 +1,37 @@
+{
+  "name": "float-grid",
+  "version": "1.0.0",
+  "description": "A Float based CSS Grid Framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cojdev/float-grid.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "grid",
+    "framework",
+    "float"
+  ],
+  "author": "Charles Ojukwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cojdev/float-grid/issues"
+  },
+  "homepage": "https://github.com/cojdev/float-grid#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "^5.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

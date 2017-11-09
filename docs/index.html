@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    <title>Float Grid</title>
+</head>
+<body>
+    <main class="main" role="main">
+
+        <h1><span class="heading">Float</span> Grid</h1>
+        <p>A simple Float-based Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
+        
+        <!-- Variables -->
+        <section id="variables">
+            <h2>Global Variables</h2>
+            <table>
+                <tr>
+                    <td><code>$columns</code></td>
+                    <td>Total number of columns.</td>
+                </tr>
+                <tr>
+                    <td><code>$gutter</code></td>
+                    <td>Space between columns.</td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <!-- Mixins -->
+        <section id="mixins">
+            <h2>Mixins</h2>
+            <table>
+                <tr>
+                    <td>Row</td>
+                    <td><code>row(size, gutter)</code></td>
+                </tr>
+                <tr>
+                    <td>Column</td>
+                    <td><code>column(size, gutter, min-break, max-break)</code></td>
+                </tr>
+            </table>
+        </section>
+        
+               
+        <!-- Column Sizes -->
+        <section id="column-sizes">
+            <h2>Column Sizes</h2>
+            <p>Columns are a sized based on the <code>$columns</code> value (default is 12).</p>
+            <div class="row stripes">
+                <div class="col-4">
+                    <p>col-4</p> 
+                </div>
+                <div class="col-8">
+                    <p>col-8</p>
+                </div>
+            </div>
+
+            <div class="source">
+                <pre class="html"><code>
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;col-4&lt;/p&gt; 
+        &lt;/div&gt;
+        &lt;div class=&quot;col-8&quot;&gt;
+            &lt;p&gt;col-8&lt;/p&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+            </code></pre>
+            <pre class="css"><code>
+    .col-4 {
+        @include column(4);
+    }
+
+    .col-8 {
+        @include column(8);
+    }
+                </code></pre>
+            </div>
+        </section>
+        
+        <!-- Semantic Classes -->
+        <section id="semantic">
+            <h2>Semantic Classes</h2>
+            <p>Use SCSS mixins to keep markup semantic.</p>
+            <div class="container stripes">
+                <div class="header">
+                    <p>Header</p> 
+                </div>
+                <div class="content">
+                    <p>Content</p> 
+                </div>
+                <div class="sidebar">
+                    <p>Sidebar</p>
+                </div>
+                <div class="footer">
+                    <p>Footer</p> 
+                </div>
+            </div>
+
+            <div class="source">
+                <pre class="html"><code>
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;header&quot;&gt;
+            &lt;!-- Header --&gt; 
+        &lt;/div&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;!-- Content --&gt; 
+        &lt;/div&gt;
+        &lt;div class=&quot;sidebar&quot;&gt;
+            &lt;!-- Sidebar --&gt; 
+        &lt;/div&gt;
+        &lt;div class=&quot;footer&quot;&gt;
+            &lt;!-- Footer --&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+            </code></pre>
+
+            <pre class="css"><code>
+    .header {
+        @include column(12);
+    }
+    .sidebar {
+        @include column(3);
+    }
+    .content {
+        @include column(9);
+    }
+    .footer {
+        @include column(12);
+    }
+                </code></pre>
+            </div>
+        </section>
+        
+        <!-- Offset -->
+        <section id="push">
+            <h2>Push</h2>
+            <p>Move a columns to the left a certain amount.</p>
+            <div class="row stripes">
+                <div class="col-4 push-8">
+                    <p>push-8</p>
+                </div>
+            </div>
+            <div class="row stripes">
+                <div class="col-8 push-4">
+                    <p>push-4</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nested grids -->
+        <section id="nested">
+            <h2>Nested</h2>
+            <p>Supports unlimited nesting.</p>
+            <div class="row stripes">
+                <div class="col-6 nested">
+                    <div class="row stripes">
+                        <div class="col-6">
+                            <p>nested</p>
+                        </div>
+                        <div class="col-6 nested">
+                                <div class="row stripes">
+                                    <div class="col-6">
+                                        <p>nested</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>nested</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 nested">
+                    <p>not nested</p>
+                </div>
+            </div>
+
+            <pre class="html"><code>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;!-- Content --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </section>
+
+        <!-- Gutters -->
+        <section id="gutters">
+            <h2>Gutters</h2>
+            <p>Gutter sizes are based on the <code>$gutter</code> value (default 2rem).</p>
+            <div class="row">
+                <!-- No Gutter -->
+                <div class="col-4">
+                    <div class="row g0 stripes">
+                        <div class="col-6">
+                            <p>no gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>no gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>no gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>no gutter</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Small Gutter -->
+                <div class="col-4">
+                    <div class="row gs stripes">
+                        <div class="col-6">
+                            <p>small gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>small gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>small gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>small gutter</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Large Gutter -->
+                <div class="col-4">
+                    <div class="row gl stripes">
+                        <div class="col-6">
+                            <p>large gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>large gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>large gutter</p>
+                        </div>
+                        <div class="col-6">
+                            <p>large gutter</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

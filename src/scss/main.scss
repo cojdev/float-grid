@@ -76,3 +76,14 @@ $background: #f8f8f8;
 .content {
     @include column(9);
 }
+
+.sidebar, .content {
+    &::before {
+        content: '';
+    
+        display: inline-block;
+        vertical-align: middle;
+        width: 0px;
+        height: 100%;
+    }
+}

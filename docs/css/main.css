@@ -781,4 +781,11 @@ Mixins stored here
       width: calc(75% - 2em);
       float: left; } }
 
+.sidebar::before, .content::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0px;
+  height: 100%; }
+
 /*# sourceMappingURL=main.css.map */

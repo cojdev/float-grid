@@ -37,6 +37,7 @@ h2 {
 .stripes p {
     background: #f8f8f8;
     display: inline-block;
+    vertical-align: middle;
     padding: 4px;
     border-radius: 4px;
 }
@@ -44,7 +45,7 @@ h2 {
 pre code {
     background: #23241f;
     color: #ddd;
-    font-family: "Inconsolata", monospace;
+    font-size: 0.9em;
     border-radius: 4px;
 }
 
@@ -55,12 +56,18 @@ pre code {
 code {
     color: #28d;
     background: #ddd;
+    font-family: "Inconsolata", monospace;
 }
 
 pre {
     background: #23241f;
     text-align: left;
     border-radius: 4px;
+    padding-left: 0.5em;
+}
+
+.m0 {
+    margin: 0;
 }
 
 .source {

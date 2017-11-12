@@ -15,7 +15,7 @@
     <main class="main" role="main">
 
         <h1><span class="heading">Float</span> Grid</h1>
-        <p>A simple Float-based Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
+        <p>A simple Float-based CSS Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
         
         <!-- Variables -->
         <section id="variables">
@@ -201,58 +201,100 @@
             <h2>Gutters</h2>
             <p>Gutter sizes are based on the <code>$gutter</code> value (default 2rem).</p>
             <div class="row">
-                <!-- No Gutter -->
-                <div class="col-4">
-                    <div class="row g0 stripes">
-                        <div class="col-6">
-                            <p>no gutter</p>
+                <div class="col-8">
+                    <!-- Sample -->
+                    <div class="row">
+                        <!-- No Gutter -->
+                        <div class="col-12">
+                            <div class="row g0 stripes">
+                                <div class="col-6">
+                                    <p>no gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>no gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>no gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>no gutter</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <p>no gutter</p>
+                        <!-- Small Gutter -->
+                        <div class="col-12">
+                            <div class="row gs stripes">
+                                <div class="col-6">
+                                    <p>small gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>small gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>small gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>small gutter</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <p>no gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>no gutter</p>
+                        <!-- Large Gutter -->
+                        <div class="col-12">
+                            <div class="row gl stripes">
+                                <div class="col-6">
+                                    <p>large gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>large gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>large gutter</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>large gutter</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Small Gutter -->
                 <div class="col-4">
-                    <div class="row gs stripes">
-                        <div class="col-6">
-                            <p>small gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>small gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>small gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>small gutter</p>
-                        </div>
-                    </div>
+                    <!-- Markup -->
+                    <pre class="html m0"><code>
+&lt;!-- no gutter --&gt;
+&lt;div class=&quot;row g0&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- small gutter --&gt;
+&lt;div class=&quot;row gs&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- large gutter --&gt;
+&lt;div class=&quot;row gl&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
                 </div>
-                <!-- Large Gutter -->
-                <div class="col-4">
-                    <div class="row gl stripes">
-                        <div class="col-6">
-                            <p>large gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>large gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>large gutter</p>
-                        </div>
-                        <div class="col-6">
-                            <p>large gutter</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+            </div>
+             
+
+            
         </section>
         
 

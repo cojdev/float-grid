@@ -29,6 +29,7 @@ Mixins stored here
 	margin: -$a (-$a / 2) 0;
 }
 
+// Columns
 @mixin column($a: 12, $b:$gutter, $min: 640px, $max: 0) {
 
 	//Coloured stripe background
@@ -46,7 +47,11 @@ Mixins stored here
 	}
 }
 
-@mixin push($a: 1) {
-	position: relative;
-	left: ($a / $columns) * 100%;
+// Offsets
+@mixin push($a: 1, $min: 640px, $max: 0) {
+	
+	@media screen and (min-width: $min) {
+		position: relative;
+		left: ($a / $columns) * 100%;
+	}
 }

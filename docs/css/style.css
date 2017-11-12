@@ -1,6 +1,6 @@
 html {
     font-family: "Work Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     color: #444;
 }
@@ -9,28 +9,65 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #f8f8f8;
+    background-color: #f2f2f2;
+    
+    /* Large gutters cause horizontal scrollbars on mobile devices */
+    overflow-x: hidden;
 }
 
 h1 {
     font-weight: 300;
-    font-size: 3rem;
-    margin: 2em 0;
+    font-size: 4rem;
 }
 
 h2 {
     font-weight: 400;
 }
 
+a {
+    color: #28d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    height: 400px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #f8f8f8, #fff); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 .heading {
     color: #28d;
+}
+
+.canvas-wrap {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.canvas {
+    display: block;
+    transform: scale(1,-1);
 }
 
 .main {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     display: block;
 }
 

@@ -688,60 +688,72 @@ Mixins stored here
         width: calc(100% - 3em);
         float: left; } }
 
-.push-1 {
-  position: relative;
-  left: 8.33333%; }
+@media screen and (min-width: 640px) {
+  .push-1 {
+    position: relative;
+    left: 8.33333%; } }
 
-.push-2 {
-  position: relative;
-  left: 16.66667%; }
+@media screen and (min-width: 640px) {
+  .push-2 {
+    position: relative;
+    left: 16.66667%; } }
 
-.push-3 {
-  position: relative;
-  left: 25%; }
+@media screen and (min-width: 640px) {
+  .push-3 {
+    position: relative;
+    left: 25%; } }
 
-.push-4 {
-  position: relative;
-  left: 33.33333%; }
+@media screen and (min-width: 640px) {
+  .push-4 {
+    position: relative;
+    left: 33.33333%; } }
 
-.push-5 {
-  position: relative;
-  left: 41.66667%; }
+@media screen and (min-width: 640px) {
+  .push-5 {
+    position: relative;
+    left: 41.66667%; } }
 
-.push-6 {
-  position: relative;
-  left: 50%; }
+@media screen and (min-width: 640px) {
+  .push-6 {
+    position: relative;
+    left: 50%; } }
 
-.push-7 {
-  position: relative;
-  left: 58.33333%; }
+@media screen and (min-width: 640px) {
+  .push-7 {
+    position: relative;
+    left: 58.33333%; } }
 
-.push-8 {
-  position: relative;
-  left: 66.66667%; }
+@media screen and (min-width: 640px) {
+  .push-8 {
+    position: relative;
+    left: 66.66667%; } }
 
-.push-9 {
-  position: relative;
-  left: 75%; }
+@media screen and (min-width: 640px) {
+  .push-9 {
+    position: relative;
+    left: 75%; } }
 
-.push-10 {
-  position: relative;
-  left: 83.33333%; }
+@media screen and (min-width: 640px) {
+  .push-10 {
+    position: relative;
+    left: 83.33333%; } }
 
-.push-11 {
-  position: relative;
-  left: 91.66667%; }
+@media screen and (min-width: 640px) {
+  .push-11 {
+    position: relative;
+    left: 91.66667%; } }
 
-.push-12 {
-  position: relative;
-  left: 100%; }
+@media screen and (min-width: 640px) {
+  .push-12 {
+    position: relative;
+    left: 100%; } }
 
 .nested {
   padding: 1rem; }
 
-.header, .footer {
+.header2, .footer2 {
   margin: 2em 1em 0; }
-  .stripes .header, .stripes .footer {
+  .stripes .header2, .stripes .footer2 {
     border-radius: 4px;
     border: #28d solid 1px;
     color: #28d;
@@ -749,7 +761,7 @@ Mixins stored here
     background-color: #f8f8f8;
     background-size: 20px 20px; }
   @media screen and (min-width: 640px) {
-    .header, .footer {
+    .header2, .footer2 {
       width: calc(100% - 2em);
       float: left; } }
 

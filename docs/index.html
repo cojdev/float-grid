@@ -12,11 +12,19 @@
     <title>Float Grid</title>
 </head>
 <body>
-    <main class="main" role="main">
+    <header class="header">
+        <div>
+            <h1><span class="heading">Float</span> Grid</h1>
+            <p>A simple Float-based CSS Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
+            <p><a href="https://github.com/cojdev/float-grid">Github Repo</a></p>
+        </div>
+    </header>
 
-        <h1><span class="heading">Float</span> Grid</h1>
-        <p>A simple Float-based CSS Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
-        
+    <div class="canvas-wrap">
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
+    
+    <main class="main" role="main">
         <!-- Variables -->
         <section id="variables">
             <h2>Global Variables</h2>
@@ -90,7 +98,7 @@
             <h2>Semantic Classes</h2>
             <p>Use SCSS mixins to keep markup semantic.</p>
             <div class="container stripes">
-                <div class="header">
+                <div class="header2">
                     <p>Header</p> 
                 </div>
                 <div class="content">
@@ -99,7 +107,7 @@
                 <div class="sidebar">
                     <p>Sidebar</p>
                 </div>
-                <div class="footer">
+                <div class="footer2">
                     <p>Footer</p> 
                 </div>
             </div>
@@ -302,6 +310,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script src="js/waves.js"></script>
 
 </body>
 </html>

@@ -117,7 +117,7 @@ section {
 }
 
 .source > * {
-    width: 50%;
+    width: calc(50% - 0.5rem);
 }
 
 .source > *:first-child {

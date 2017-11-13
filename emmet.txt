@@ -1,0 +1,1 @@
+(header.header>nav.nav>ul.nav-menu>li*4>a)+main.main+footer.footer

@@ -10,7 +10,10 @@ var gulp = require('gulp'),
     filter = require('gulp-filter'),
 
     //--CSS
+    postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    mqpacker = require('css-mqpacker'),
     cssnano = require('gulp-cssnano');
 
 //--Parse and minify Sass
@@ -18,6 +21,11 @@ gulp.task('sass', function() {
 return gulp.src('src/scss/**/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(postcss([mqpacker()]))
     .pipe(rename('main.css'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('docs/css'))

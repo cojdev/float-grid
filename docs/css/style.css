@@ -48,10 +48,6 @@ a:hover {
     font-weight: 300;
 }
 
-.heading {
-    color: #28d;
-}
-
 .canvas-wrap {
     max-width: 100%;
     overflow: hidden;
@@ -112,6 +108,49 @@ pre {
     align-items: stretch;
 }
 
+.topbar {
+    background: #f8f8f8;
+    height: 50px;
+    font-weight: 400;
+}
+
+.topbar a {
+    color: #555;
+}
+
+.topbar > ul {
+    line-height: 50px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+}
+.logo a {
+    display: block;
+    height: 50px;
+    padding: .5rem;
+}
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.flex {
+    color: #e34;
+}
+
+.float {
+    color: #28d;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #ddd;
+    margin: 0;
+}
+
 section {
     margin-bottom: 2rem;
 }
@@ -122,4 +161,24 @@ section {
 
 .source > *:first-child {
     margin-right: 1rem;
+}
+
+.footer {
+    padding: 2rem 0;
+}
+
+.inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-list li {
+    display: inline;
+}
+
+.inline-list li + li::before {
+    content: " • ";
+    color: #ddd;
+
 }

@@ -23,6 +23,7 @@ Mixins stored here
 
 */
 *, *::before, *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .row {
@@ -61,10 +62,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-1 {
-      width: calc(8.33333% - 2em);
-      float: left; } }
   .g0 .col-1 {
     margin: 0 0 0; }
     .stripes .g0 .col-1 {
@@ -74,10 +71,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-1 {
-        width: calc(8.33333% - 0);
-        float: left; } }
   .gs .col-1 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-1 {
@@ -87,10 +80,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-1 {
-        width: calc(8.33333% - 1em);
-        float: left; } }
   .gl .col-1 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-1 {
@@ -100,10 +89,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-1 {
-        width: calc(8.33333% - 3em);
-        float: left; } }
 
 .col-2 {
   margin: 2em 1em 0; }
@@ -114,10 +99,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-2 {
-      width: calc(16.66667% - 2em);
-      float: left; } }
   .g0 .col-2 {
     margin: 0 0 0; }
     .stripes .g0 .col-2 {
@@ -127,10 +108,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-2 {
-        width: calc(16.66667% - 0);
-        float: left; } }
   .gs .col-2 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-2 {
@@ -140,10 +117,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-2 {
-        width: calc(16.66667% - 1em);
-        float: left; } }
   .gl .col-2 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-2 {
@@ -153,10 +126,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-2 {
-        width: calc(16.66667% - 3em);
-        float: left; } }
 
 .col-3 {
   margin: 2em 1em 0; }
@@ -167,10 +136,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-3 {
-      width: calc(25% - 2em);
-      float: left; } }
   .g0 .col-3 {
     margin: 0 0 0; }
     .stripes .g0 .col-3 {
@@ -180,10 +145,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-3 {
-        width: calc(25% - 0);
-        float: left; } }
   .gs .col-3 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-3 {
@@ -193,10 +154,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-3 {
-        width: calc(25% - 1em);
-        float: left; } }
   .gl .col-3 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-3 {
@@ -206,10 +163,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-3 {
-        width: calc(25% - 3em);
-        float: left; } }
 
 .col-4 {
   margin: 2em 1em 0; }
@@ -220,10 +173,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-4 {
-      width: calc(33.33333% - 2em);
-      float: left; } }
   .g0 .col-4 {
     margin: 0 0 0; }
     .stripes .g0 .col-4 {
@@ -233,10 +182,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-4 {
-        width: calc(33.33333% - 0);
-        float: left; } }
   .gs .col-4 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-4 {
@@ -246,10 +191,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-4 {
-        width: calc(33.33333% - 1em);
-        float: left; } }
   .gl .col-4 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-4 {
@@ -259,10 +200,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-4 {
-        width: calc(33.33333% - 3em);
-        float: left; } }
 
 .col-5 {
   margin: 2em 1em 0; }
@@ -273,10 +210,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-5 {
-      width: calc(41.66667% - 2em);
-      float: left; } }
   .g0 .col-5 {
     margin: 0 0 0; }
     .stripes .g0 .col-5 {
@@ -286,10 +219,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-5 {
-        width: calc(41.66667% - 0);
-        float: left; } }
   .gs .col-5 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-5 {
@@ -299,10 +228,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-5 {
-        width: calc(41.66667% - 1em);
-        float: left; } }
   .gl .col-5 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-5 {
@@ -312,10 +237,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-5 {
-        width: calc(41.66667% - 3em);
-        float: left; } }
 
 .col-6 {
   margin: 2em 1em 0; }
@@ -326,10 +247,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-6 {
-      width: calc(50% - 2em);
-      float: left; } }
   .g0 .col-6 {
     margin: 0 0 0; }
     .stripes .g0 .col-6 {
@@ -339,10 +256,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-6 {
-        width: calc(50% - 0);
-        float: left; } }
   .gs .col-6 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-6 {
@@ -352,10 +265,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-6 {
-        width: calc(50% - 1em);
-        float: left; } }
   .gl .col-6 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-6 {
@@ -365,10 +274,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-6 {
-        width: calc(50% - 3em);
-        float: left; } }
 
 .col-7 {
   margin: 2em 1em 0; }
@@ -379,10 +284,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-7 {
-      width: calc(58.33333% - 2em);
-      float: left; } }
   .g0 .col-7 {
     margin: 0 0 0; }
     .stripes .g0 .col-7 {
@@ -392,10 +293,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-7 {
-        width: calc(58.33333% - 0);
-        float: left; } }
   .gs .col-7 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-7 {
@@ -405,10 +302,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-7 {
-        width: calc(58.33333% - 1em);
-        float: left; } }
   .gl .col-7 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-7 {
@@ -418,10 +311,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-7 {
-        width: calc(58.33333% - 3em);
-        float: left; } }
 
 .col-8 {
   margin: 2em 1em 0; }
@@ -432,10 +321,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-8 {
-      width: calc(66.66667% - 2em);
-      float: left; } }
   .g0 .col-8 {
     margin: 0 0 0; }
     .stripes .g0 .col-8 {
@@ -445,10 +330,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-8 {
-        width: calc(66.66667% - 0);
-        float: left; } }
   .gs .col-8 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-8 {
@@ -458,10 +339,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-8 {
-        width: calc(66.66667% - 1em);
-        float: left; } }
   .gl .col-8 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-8 {
@@ -471,10 +348,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-8 {
-        width: calc(66.66667% - 3em);
-        float: left; } }
 
 .col-9 {
   margin: 2em 1em 0; }
@@ -485,10 +358,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-9 {
-      width: calc(75% - 2em);
-      float: left; } }
   .g0 .col-9 {
     margin: 0 0 0; }
     .stripes .g0 .col-9 {
@@ -498,10 +367,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-9 {
-        width: calc(75% - 0);
-        float: left; } }
   .gs .col-9 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-9 {
@@ -511,10 +376,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-9 {
-        width: calc(75% - 1em);
-        float: left; } }
   .gl .col-9 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-9 {
@@ -524,10 +385,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-9 {
-        width: calc(75% - 3em);
-        float: left; } }
 
 .col-10 {
   margin: 2em 1em 0; }
@@ -538,10 +395,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-10 {
-      width: calc(83.33333% - 2em);
-      float: left; } }
   .g0 .col-10 {
     margin: 0 0 0; }
     .stripes .g0 .col-10 {
@@ -551,10 +404,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-10 {
-        width: calc(83.33333% - 0);
-        float: left; } }
   .gs .col-10 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-10 {
@@ -564,10 +413,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-10 {
-        width: calc(83.33333% - 1em);
-        float: left; } }
   .gl .col-10 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-10 {
@@ -577,10 +422,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-10 {
-        width: calc(83.33333% - 3em);
-        float: left; } }
 
 .col-11 {
   margin: 2em 1em 0; }
@@ -591,10 +432,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-11 {
-      width: calc(91.66667% - 2em);
-      float: left; } }
   .g0 .col-11 {
     margin: 0 0 0; }
     .stripes .g0 .col-11 {
@@ -604,10 +441,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-11 {
-        width: calc(91.66667% - 0);
-        float: left; } }
   .gs .col-11 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-11 {
@@ -617,10 +450,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-11 {
-        width: calc(91.66667% - 1em);
-        float: left; } }
   .gl .col-11 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-11 {
@@ -630,10 +459,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-11 {
-        width: calc(91.66667% - 3em);
-        float: left; } }
 
 .col-12 {
   margin: 2em 1em 0; }
@@ -644,10 +469,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .col-12 {
-      width: calc(100% - 2em);
-      float: left; } }
   .g0 .col-12 {
     margin: 0 0 0; }
     .stripes .g0 .col-12 {
@@ -657,10 +478,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .g0 .col-12 {
-        width: calc(100% - 0);
-        float: left; } }
   .gs .col-12 {
     margin: 1em 0.5em 0; }
     .stripes .gs .col-12 {
@@ -670,10 +487,6 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gs .col-12 {
-        width: calc(100% - 1em);
-        float: left; } }
   .gl .col-12 {
     margin: 3em 1.5em 0; }
     .stripes .gl .col-12 {
@@ -683,73 +496,9 @@ Mixins stored here
       background-image: url("../img/column-stripe-2x.png");
       background-color: #f8f8f8;
       background-size: 20px 20px; }
-    @media screen and (min-width: 640px) {
-      .gl .col-12 {
-        width: calc(100% - 3em);
-        float: left; } }
-
-@media screen and (min-width: 640px) {
-  .push-1 {
-    position: relative;
-    left: 8.33333%; } }
-
-@media screen and (min-width: 640px) {
-  .push-2 {
-    position: relative;
-    left: 16.66667%; } }
-
-@media screen and (min-width: 640px) {
-  .push-3 {
-    position: relative;
-    left: 25%; } }
-
-@media screen and (min-width: 640px) {
-  .push-4 {
-    position: relative;
-    left: 33.33333%; } }
-
-@media screen and (min-width: 640px) {
-  .push-5 {
-    position: relative;
-    left: 41.66667%; } }
-
-@media screen and (min-width: 640px) {
-  .push-6 {
-    position: relative;
-    left: 50%; } }
-
-@media screen and (min-width: 640px) {
-  .push-7 {
-    position: relative;
-    left: 58.33333%; } }
-
-@media screen and (min-width: 640px) {
-  .push-8 {
-    position: relative;
-    left: 66.66667%; } }
-
-@media screen and (min-width: 640px) {
-  .push-9 {
-    position: relative;
-    left: 75%; } }
-
-@media screen and (min-width: 640px) {
-  .push-10 {
-    position: relative;
-    left: 83.33333%; } }
-
-@media screen and (min-width: 640px) {
-  .push-11 {
-    position: relative;
-    left: 91.66667%; } }
-
-@media screen and (min-width: 640px) {
-  .push-12 {
-    position: relative;
-    left: 100%; } }
 
 .nested {
-  padding: 1rem; }
+  padding: 0.5rem; }
 
 .header2, .footer2 {
   margin: 2em 1em 0; }
@@ -760,10 +509,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .header2, .footer2 {
-      width: calc(100% - 2em);
-      float: left; } }
 
 .sidebar {
   margin: 2em 1em 0; }
@@ -774,10 +519,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .sidebar {
-      width: calc(25% - 2em);
-      float: left; } }
 
 .content {
   margin: 2em 1em 0; }
@@ -788,10 +529,6 @@ Mixins stored here
     background-image: url("../img/column-stripe-2x.png");
     background-color: #f8f8f8;
     background-size: 20px 20px; }
-  @media screen and (min-width: 640px) {
-    .content {
-      width: calc(75% - 2em);
-      float: left; } }
 
 .sidebar::before, .content::before {
   content: '';
@@ -799,5 +536,196 @@ Mixins stored here
   vertical-align: middle;
   width: 0px;
   height: 100%; }
+
+@media screen and (min-width: 640px) {
+    .col-1 {
+      width: calc(8.33333% - 2em);
+      float: left; }
+      .g0 .col-1 {
+        width: calc(8.33333% - 0);
+        float: left; }
+      .gs .col-1 {
+        width: calc(8.33333% - 1em);
+        float: left; }
+      .gl .col-1 {
+        width: calc(8.33333% - 3em);
+        float: left; }
+    .col-2 {
+      width: calc(16.66667% - 2em);
+      float: left; }
+      .g0 .col-2 {
+        width: calc(16.66667% - 0);
+        float: left; }
+      .gs .col-2 {
+        width: calc(16.66667% - 1em);
+        float: left; }
+      .gl .col-2 {
+        width: calc(16.66667% - 3em);
+        float: left; }
+    .col-3 {
+      width: calc(25% - 2em);
+      float: left; }
+      .g0 .col-3 {
+        width: calc(25% - 0);
+        float: left; }
+      .gs .col-3 {
+        width: calc(25% - 1em);
+        float: left; }
+      .gl .col-3 {
+        width: calc(25% - 3em);
+        float: left; }
+    .col-4 {
+      width: calc(33.33333% - 2em);
+      float: left; }
+      .g0 .col-4 {
+        width: calc(33.33333% - 0);
+        float: left; }
+      .gs .col-4 {
+        width: calc(33.33333% - 1em);
+        float: left; }
+      .gl .col-4 {
+        width: calc(33.33333% - 3em);
+        float: left; }
+    .col-5 {
+      width: calc(41.66667% - 2em);
+      float: left; }
+      .g0 .col-5 {
+        width: calc(41.66667% - 0);
+        float: left; }
+      .gs .col-5 {
+        width: calc(41.66667% - 1em);
+        float: left; }
+      .gl .col-5 {
+        width: calc(41.66667% - 3em);
+        float: left; }
+    .col-6 {
+      width: calc(50% - 2em);
+      float: left; }
+      .g0 .col-6 {
+        width: calc(50% - 0);
+        float: left; }
+      .gs .col-6 {
+        width: calc(50% - 1em);
+        float: left; }
+      .gl .col-6 {
+        width: calc(50% - 3em);
+        float: left; }
+    .col-7 {
+      width: calc(58.33333% - 2em);
+      float: left; }
+      .g0 .col-7 {
+        width: calc(58.33333% - 0);
+        float: left; }
+      .gs .col-7 {
+        width: calc(58.33333% - 1em);
+        float: left; }
+      .gl .col-7 {
+        width: calc(58.33333% - 3em);
+        float: left; }
+    .col-8 {
+      width: calc(66.66667% - 2em);
+      float: left; }
+      .g0 .col-8 {
+        width: calc(66.66667% - 0);
+        float: left; }
+      .gs .col-8 {
+        width: calc(66.66667% - 1em);
+        float: left; }
+      .gl .col-8 {
+        width: calc(66.66667% - 3em);
+        float: left; }
+    .col-9 {
+      width: calc(75% - 2em);
+      float: left; }
+      .g0 .col-9 {
+        width: calc(75% - 0);
+        float: left; }
+      .gs .col-9 {
+        width: calc(75% - 1em);
+        float: left; }
+      .gl .col-9 {
+        width: calc(75% - 3em);
+        float: left; }
+    .col-10 {
+      width: calc(83.33333% - 2em);
+      float: left; }
+      .g0 .col-10 {
+        width: calc(83.33333% - 0);
+        float: left; }
+      .gs .col-10 {
+        width: calc(83.33333% - 1em);
+        float: left; }
+      .gl .col-10 {
+        width: calc(83.33333% - 3em);
+        float: left; }
+    .col-11 {
+      width: calc(91.66667% - 2em);
+      float: left; }
+      .g0 .col-11 {
+        width: calc(91.66667% - 0);
+        float: left; }
+      .gs .col-11 {
+        width: calc(91.66667% - 1em);
+        float: left; }
+      .gl .col-11 {
+        width: calc(91.66667% - 3em);
+        float: left; }
+    .col-12 {
+      width: calc(100% - 2em);
+      float: left; }
+      .g0 .col-12 {
+        width: calc(100% - 0);
+        float: left; }
+      .gs .col-12 {
+        width: calc(100% - 1em);
+        float: left; }
+      .gl .col-12 {
+        width: calc(100% - 3em);
+        float: left; }
+  .push-1 {
+    position: relative;
+    left: 8.33333%; }
+  .push-2 {
+    position: relative;
+    left: 16.66667%; }
+  .push-3 {
+    position: relative;
+    left: 25%; }
+  .push-4 {
+    position: relative;
+    left: 33.33333%; }
+  .push-5 {
+    position: relative;
+    left: 41.66667%; }
+  .push-6 {
+    position: relative;
+    left: 50%; }
+  .push-7 {
+    position: relative;
+    left: 58.33333%; }
+  .push-8 {
+    position: relative;
+    left: 66.66667%; }
+  .push-9 {
+    position: relative;
+    left: 75%; }
+  .push-10 {
+    position: relative;
+    left: 83.33333%; }
+  .push-11 {
+    position: relative;
+    left: 91.66667%; }
+  .push-12 {
+    position: relative;
+    left: 100%; }
+    .header2, .footer2 {
+      width: calc(100% - 2em);
+      float: left; }
+    .sidebar {
+      width: calc(25% - 2em);
+      float: left; }
+    .content {
+      width: calc(75% - 2em);
+      float: left; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="theme-color" content="#ffffff">
     <title>Float Grid</title>
 </head>
 <body>
+    <div class="topbar">
+        <div class="logo"><a href="https://cojdev.github.io"><img src="img/co.png" alt="Charles Ojukwu"></a></div>
+        <ul class="inline-list">
+            <li><a href="https://cojdev.github.io/float-grid"><span class="float">Float</span> Grid</a></li>
+            <li><a href="https://cojdev.github.io/flex-grid"><span class="flex">Flex</span> Grid</a></li>
+        </ul>
+    </div>
+        <hr>
     <header class="header">
         <div>
-            <h1><span class="heading">Float</span> Grid</h1>
+            <h1><span class="float">Float</span> Grid</h1>
             <p>A simple Float-based CSS Grid System built with <a href="http://sass-lang.com">Sass</a>.</p>
-            <p><a href="https://github.com/cojdev/float-grid">Github Repo</a></p>
+            <p><a href="https://github.com/cojdev/float-grid"><i class="fa fa-github" aria-hidden="true"></i> View on Github</a></p>
         </div>
     </header>
 
@@ -39,7 +54,6 @@
                 </tr>
             </table>
         </section>
-        
 
         <!-- Mixins -->
         <section id="mixins">
@@ -55,7 +69,6 @@
                 </tr>
             </table>
         </section>
-        
                
         <!-- Column Sizes -->
         <section id="column-sizes">
@@ -71,25 +84,22 @@
             </div>
 
             <div class="source">
-                <pre class="html"><code>
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-4&quot;&gt;
-            &lt;p&gt;col-4&lt;/p&gt; 
-        &lt;/div&gt;
-        &lt;div class=&quot;col-8&quot;&gt;
-            &lt;p&gt;col-8&lt;/p&gt; 
-        &lt;/div&gt;
+<pre class="html"><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-4&quot;&gt;
+        &lt;p&gt;col-4&lt;/p&gt; 
     &lt;/div&gt;
-            </code></pre>
-            <pre class="css"><code>
-    .col-4 {
-        @include column(4);
-    }
+    &lt;div class=&quot;col-8&quot;&gt;
+        &lt;p&gt;col-8&lt;/p&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                
+<pre class="css"><code>.col-4 {
+    @include column(4);
+}
 
-    .col-8 {
-        @include column(8);
-    }
-                </code></pre>
+.col-8 {
+    @include column(8);
+}</code></pre>
             </div>
         </section>
         
@@ -113,37 +123,33 @@
             </div>
 
             <div class="source">
-                <pre class="html"><code>
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;header&quot;&gt;
-            &lt;!-- Header --&gt; 
-        &lt;/div&gt;
-        &lt;div class=&quot;content&quot;&gt;
-            &lt;!-- Content --&gt; 
-        &lt;/div&gt;
-        &lt;div class=&quot;sidebar&quot;&gt;
-            &lt;!-- Sidebar --&gt; 
-        &lt;/div&gt;
-        &lt;div class=&quot;footer&quot;&gt;
-            &lt;!-- Footer --&gt; 
-        &lt;/div&gt;
+<pre class="html"><code>&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;!-- Header --&gt; 
     &lt;/div&gt;
-            </code></pre>
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;!-- Content --&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;sidebar&quot;&gt;
+        &lt;!-- Sidebar --&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;footer&quot;&gt;
+        &lt;!-- Footer --&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-            <pre class="css"><code>
-    .header {
-        @include column(12);
-    }
-    .sidebar {
-        @include column(3);
-    }
-    .content {
-        @include column(9);
-    }
-    .footer {
-        @include column(12);
-    }
-                </code></pre>
+<pre class="css"><code>.header {
+    @include column(12);
+}
+.sidebar {
+    @include column(3);
+}
+.content {
+    @include column(9);
+}
+.footer {
+    @include column(12);
+}</code></pre>
             </div>
         </section>
         
@@ -174,24 +180,23 @@
                             <p>nested</p>
                         </div>
                         <div class="col-6 nested">
-                                <div class="row stripes">
-                                    <div class="col-6">
-                                        <p>nested</p>
-                                    </div>
-                                    <div class="col-6">
-                                        <p>nested</p>
-                                    </div>
+                            <div class="row stripes">
+                                <div class="col-6">
+                                    <p>nested</p>
                                 </div>
+                                <div class="col-6">
+                                    <p>nested</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-5 nested">
                     <p>not nested</p>
                 </div>
             </div>
-
-            <pre class="html"><code>
-&lt;div class=&quot;row&quot;&gt;
+<pre class="html"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;
         &lt;!-- Content --&gt;
         &lt;div class=&quot;row&quot;&gt;
@@ -200,8 +205,7 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
+&lt;/div&gt;</code></pre>
         </section>
 
         <!-- Gutters -->
@@ -266,9 +270,8 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <!-- Markup -->
-                    <pre class="html m0"><code>
-&lt;!-- no gutter --&gt;
+                    <!-- Markup -->     
+<pre class="html m0"><code>&lt;!-- no gutter --&gt;
 &lt;div class=&quot;row g0&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;
         &lt;!-- Content --&gt;
@@ -296,17 +299,21 @@
     &lt;div class=&quot;col&quot;&gt;
         &lt;!-- Content --&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code></pre>
+&lt;/div&gt;</code></pre>
                 </div>
             </div>
-             
-
-            
         </section>
-        
-
     </main>
+    
+    <hr>
+    
+    <footer class="footer">
+        
+        <ul class="inline-list">
+            <li>Made by <a href="https://cojdev.github.io">Charles Ojukwu</a></li>
+            <li><a href="https://github.com/cojdev">GitHub</a></li>
+        </ul>
+    </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
